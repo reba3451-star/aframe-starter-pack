@@ -6,13 +6,43 @@
   </head>
   <body>
     <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0.1 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
       <!-- <a-sky color="#ECECEC"></a-sky> -->
       <!-- the enviroment entity includes a sky. Choose from the presets"none, default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, threetowers, poison, arches, tron, japan, dream, volcano, starry, osiris, moon" -->
-      <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
+      <a-entity environment="preset: forest;
+                       groundColor: #FFFFFF;
+                       groundColor2: #DDEEFF;
+                       dressingColor: #FFFFFF;
+                       skyType: color;
+                       skyColor: #BBDFFF">
+</a-entity>
+      
+<!-- SNOWMAN -->
+
+<!-- Snowman's body -->
+<a-sphere position="0 0.6 -5" radius="0.6" color="white"></a-sphere>
+<a-sphere position="0 1.45 -5" radius="0.45" color="white"></a-sphere>
+<a-sphere position="0 2.15 -5" radius="0.35" color="white"></a-sphere>
+
+<!-- Eyes -->
+<a-sphere position="-0.13 2.25 -4.69" radius="0.05" color="black"></a-sphere>
+<a-sphere position="0.13 2.25 -4.69" radius="0.05" color="black"></a-sphere>
+
+<!-- Carrot nose -->
+<a-cone position="0 2.12 -4.55"
+        radius-bottom="0.09"
+        radius-top="0"
+        height="0.4"
+        rotation="90 0 0"
+        color="orange">
+</a-cone>
+
+<!-- Buttons -->
+<a-sphere position="0 1.55 -4.56" radius="0.05" color="black"></a-sphere>
+<a-sphere position="0 1.35 -4.57" radius="0.05" color="black"></a-sphere>
+
+<!-- Hat -->
+<a-cylinder position="0 2.48 -5" radius="0.4" height="0.08" color="black"></a-cylinder>
+<a-cylinder position="0 2.7 -5" radius="0.27" height="0.4" color="black"></a-cylinder>
     </a-scene>
   </body>
 </html>
